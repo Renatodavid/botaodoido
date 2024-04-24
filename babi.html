@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>babi</title>
+    <link rel="stylesheet" href="babi.css">
+</head>
+<body>
+    <div class="container">
+        <button id="botao-maluco">SEM DEUS</button>
+        <button id="botao-central" onclick="redirecionar()">COM DEUS</button>
+    </div>
+    
+    
+    <script >
+        function redirecionar() {
+            window.location.href = "https://www.youtube.com/watch?v=SdkWBHLHTgg";
+        }
+        const botaoMaluco = document.getElementById('botao-maluco');
+
+botaoMaluco.addEventListener('mouseenter', () => {
+    const novoX = Math.random() * (window.innerWidth - botaoMaluco.offsetWidth);
+    const novoY = Math.random() * (window.innerHeight - botaoMaluco.offsetHeight);
+    botaoMaluco.style.transform = `translate(${novoX}px, ${novoY}px)`;
+});
+
+    </script>
+</body>
+</html>
