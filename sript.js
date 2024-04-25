@@ -1,5 +1,5 @@
 function redirecionar() {
-    window.location.href = "https://www.youtube.com/watch?v=SdkWBHLHTgg";
+    window.location.href = "https://www.youtube.com/shorts/3qGbunYUQ0M";
 }
 const botaoMaluco = document.getElementById('botao-maluco');
 
